@@ -1,0 +1,15 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
+<idea-plugin>
+	<id>cn.vividcode.multiplatform.ktor.client.intellij.plugin</id>
+	<name>Vividcode Multiplatform Ktor Client</name>
+	<vendor email="vividcode.multiplatform@gmail.com">vividcode</vendor>
+	<description>
+		<![CDATA[<h2>基于KtorClient的代码生成器</h2>此插件提供对标记 @Api 注解的接口 KtorClient 的扩展属性的引用]]>
+	</description>
+	<depends>com.intellij.modules.platform</depends>
+	<depends>org.jetbrains.kotlin</depends>
+	<extensions defaultExtensionNs="com.intellij">
+		<completion.contributor implementationClass="cn.vividcode.multiplatform.ktor.client.intellij.plugin.StringExtensionCompletionContributor" language="kotlin" />
+		<!--		<psi.referenceContributor implementation="cn.vividcode.multiplatform.ktor.client.intellij.plugin.StringExtensionReferenceContributor" language="kotlin" />-->
+	</extensions>
+</idea-plugin>

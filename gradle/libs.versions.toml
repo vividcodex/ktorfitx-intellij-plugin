@@ -1,0 +1,9 @@
+[versions]
+kotlin = "2.0.0"
+intellij = "1.17.4"
+
+[libraries]
+
+[plugins]
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+intellij = { id = "org.jetbrains.intellij", version.ref = "intellij" }
